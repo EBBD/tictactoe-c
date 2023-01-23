@@ -207,5 +207,81 @@ int main(int argc, char** argv){
 			i = 0;
 			turn = 0;
 		}
+	if (array[0] != 0 && array[1] != 0 && array[2] != 0 && array[3] != 0 && array[4] != 0 && array[5] != 0 && array[6] != 0 && array[7] != 0 && array[8] != 0){
+		printf("It's a tie!");
+		gameloss = 1;
+	}
+	/*row 1*/
+	if (array[0] == 1 && array[1] == 1 && array[2] == 1){
+		printf("X wins!");
+		gameloss = 1;
+	}
+	if (array[0] == 2 && array[1] == 2 && array[2] == 2){
+		printf("0 wins!");
+		gameloss == 1;
+	}
+	/*column 1*/
+	if (array[0] == 1 && array[3] == 1 && array[6] == 1){
+		printf("X wins!");
+		gameloss = 1;
+	}
+	if (array[0] == 2 && array[3] == 2 && array[6] == 2){
+		printf("0 wins!");
+		gameloss == 1;
+	}
+	/*row 2*/
+	if (array[3] == 1 && array[4] == 1 && array[5] == 1){
+		printf("X wins!");
+		gameloss = 1;
+	}
+	if (array[3] == 2 && array[4] == 2 && array[5] == 2){
+		printf("0 wins!");
+		gameloss == 1;
+	}
+	/*column 2*/
+	if (array[1] == 1 && array[4] == 1 && array[7] == 1){
+		printf("X wins!");
+		gameloss = 1;
+	}
+	if (array[1] == 2 && array[4] == 2 && array[7] == 2){
+		printf("0 wins!");
+		gameloss == 1;
+	}
+	/*row 3*/
+	if (array[6] == 1 && array[7] == 1 && array[8] == 1){
+		printf("X wins!");
+		gameloss = 1;
+	}
+	if (array[6] == 2 && array[7] == 2 && array[8] == 2){
+		printf("0 wins!");
+		gameloss == 1;
+	}
+	/*column 3*/
+	if (array[2] == 1 && array[5] == 1 && array[8] == 1){
+		printf("X wins!");
+		gameloss == 1;
+	}
+	if (array[2] == 2 && array[5] == 2 && array[8] == 2){
+		printf("0 wins!");
+		gameloss == 1;
+	}
+	/*diagonal (tl, br)*/
+	if (array[0] == 1 && array[4] == 1 && array[8] == 1){
+		printf("X wins!");
+		gameloss = 1;
+	}
+	if (array[0] == 2 && array[4] == 2 && array[8] == 2){
+		printf("0 wins!");
+		gameloss == 1;
+	}
+	/*diagonal (tr, bl)*/
+	if (array[2] == 1 && array[4] == 1 && array[6] == 1){
+		printf("X wins!");
+		gameloss = 1;
+	}
+	if (array[2] == 2 && array[4] == 2 && array[6] == 2){
+		printf("0 wins!");
+		gameloss == 1;
+	}
 	}
 }
